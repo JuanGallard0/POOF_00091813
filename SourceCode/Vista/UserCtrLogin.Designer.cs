@@ -115,6 +115,7 @@ namespace SourceCode.Vista
             this.txtPwd.Location = new System.Drawing.Point(436, 257);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(157, 20);
+            this.txtPwd.PasswordChar = '*';
             this.txtPwd.TabIndex = 2;
             // 
             // btnLogin

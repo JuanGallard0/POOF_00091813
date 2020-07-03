@@ -9,7 +9,7 @@ namespace SourceCode.Controlador
     {
         public static string GetNombreDepartamento(int idDepartamento)
         {
-            string sql = String.Format("select nombre from departamento where idDepartamento = {0};",
+            string sql = String.Format("select nombre from departamento where idDepartamento = '{0}';",
                 idDepartamento);
             return Connection.ExecuteStringQuery(sql);
         }

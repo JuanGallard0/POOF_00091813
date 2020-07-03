@@ -47,6 +47,12 @@ namespace SourceCode.Vista
             
             lblfreq.Font = new Font("Consolas", 14);
 
+            lblMaxTemps.Text = "Mayores temperaturas";
+            lblMaxTemps.Font = new Font("Consolas", 14);
+
+            lblOldies.Text = "Empleados mayores de 60 años";
+            lblOldies.Font = new Font("Consolas", 14);
+
             title.Text = "Agregar usuario";
             title.Font = new Font("Consolas", 24);
 
@@ -60,7 +66,7 @@ namespace SourceCode.Vista
             titleTop.Font = new Font("Consolas", 14);
             
             titlebuild.Text = "Empleados dentro de la empresa";
-            titlebuild.Font = new Font("Consolas", 24);
+            titlebuild.Font = new Font("Consolas", 14);
 
             btnReturn.Text = "REGRESAR";
             btnReturn.Font = new Font("Consolas", 10);

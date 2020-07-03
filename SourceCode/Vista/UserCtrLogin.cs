@@ -43,8 +43,9 @@ namespace SourceCode.Vista
             if (proxy.PeticionAcceso(txtUser.Text, txtPwd.Text))
             {
                 Usuario u = new Usuario();
+                
                 u = UsuarioDAO.GetSingleUsuario(txtUser.Text);
-
+                
                 string nombreDepartamento = DepartamentoDAO.GetNombreDepartamento(u.idDepartamento);
 
                 IDepartamento miDepartamento;
