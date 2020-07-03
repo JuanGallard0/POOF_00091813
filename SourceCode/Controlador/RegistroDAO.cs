@@ -61,5 +61,33 @@ namespace SourceCode.Controlador
             }
             return list;
         }
+
+        public static int MaximaTemperatura(string idUsuario)
+        {
+            string sql =
+                String.Format("SELECT temperatura from registro where idUsuario = '{0}' order by temperatura desc limit 1;",
+                    idUsuario);
+            return Connection.ExecuteInttQuery(sql);
+        }
+        
+        public static List<Frequencia> BuscarMaxTemps()
+        {
+            string sql = 
+                "SELECT usuario.idUsuario , temperatura from registro inner join usuario on " +
+                "registro.idUsuario = usuario.idUsuario order by temperatura desc limit 5;";
+
+            DataTable dt = Connection.ExecuteQuery(sql);
+
+            List<Frequencia> list = new List<Frequencia>();
+            foreach (DataRow fila in dt.Rows)
+            {
+                Frequencia f = new Frequencia();
+                f.nombre = fila[0].ToString();
+                f.frecuencia = Convert.ToInt32(fila[1].ToString());
+
+                list.Add(f);
+            }
+            return list;
+        }
     }
 }

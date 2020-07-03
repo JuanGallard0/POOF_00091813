@@ -49,9 +49,9 @@ namespace SourceCode.Vista
             this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.21212F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.63636F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.65101F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.34899F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.tableLayoutPanel1.Controls.Add(this.title, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 2);
@@ -74,9 +74,9 @@ namespace SourceCode.Vista
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.title, 3);
             this.title.Dock = System.Windows.Forms.DockStyle.Top;
-            this.title.Location = new System.Drawing.Point(65, 0);
+            this.title.Location = new System.Drawing.Point(70, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(490, 67);
+            this.title.Size = new System.Drawing.Size(523, 67);
             this.title.TabIndex = 0;
             this.title.Text = "label1";
             // 
@@ -84,9 +84,9 @@ namespace SourceCode.Vista
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.Location = new System.Drawing.Point(281, 127);
+            this.label1.Location = new System.Drawing.Point(301, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 52);
+            this.label1.Size = new System.Drawing.Size(129, 52);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -94,9 +94,9 @@ namespace SourceCode.Vista
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Location = new System.Drawing.Point(281, 254);
+            this.label2.Location = new System.Drawing.Point(301, 254);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 52);
+            this.label2.Size = new System.Drawing.Size(129, 52);
             this.label2.TabIndex = 1;
             this.label2.Text = "label1";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -104,24 +104,24 @@ namespace SourceCode.Vista
             // txtUser
             // 
             this.txtUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtUser.Location = new System.Drawing.Point(421, 130);
+            this.txtUser.Location = new System.Drawing.Point(436, 130);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(134, 20);
+            this.txtUser.Size = new System.Drawing.Size(157, 20);
             this.txtUser.TabIndex = 2;
             // 
             // txtPwd
             // 
             this.txtPwd.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtPwd.Location = new System.Drawing.Point(421, 257);
+            this.txtPwd.Location = new System.Drawing.Point(436, 257);
             this.txtPwd.Name = "txtPwd";
-            this.txtPwd.Size = new System.Drawing.Size(134, 20);
+            this.txtPwd.Size = new System.Drawing.Size(157, 20);
             this.txtPwd.TabIndex = 2;
             // 
             // btnLogin
             // 
             this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tableLayoutPanel1.SetColumnSpan(this.btnLogin, 2);
-            this.btnLogin.Location = new System.Drawing.Point(348, 384);
+            this.btnLogin.Location = new System.Drawing.Point(377, 384);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(140, 47);
             this.btnLogin.TabIndex = 3;
@@ -132,10 +132,11 @@ namespace SourceCode.Vista
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(65, 130);
+            this.pictureBox1.Location = new System.Drawing.Point(70, 130);
             this.pictureBox1.Name = "pictureBox1";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox1, 2);
-            this.pictureBox1.Size = new System.Drawing.Size(210, 248);
+            this.pictureBox1.Size = new System.Drawing.Size(225, 248);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 

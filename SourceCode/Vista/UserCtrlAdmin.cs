@@ -18,6 +18,7 @@ namespace SourceCode.Vista
         private List<Departamento> listD = new List<Departamento>();
         private List<Registro> listR = new List<Registro>();
         private List<UsuarioReducido> listUR = new List<UsuarioReducido>();
+        private List<Frequencia> listF = new List<Frequencia>();
         
         public UserCtrlAdmin(Usuario usuario)
         {
@@ -35,10 +36,12 @@ namespace SourceCode.Vista
             tabPage1.Text = "Mantenimiento de usuarios";
 
             tabPage2.Text = "Resumenes";
-
+            
+            tabPage3.Text = "Resumenes extra";
+            
             lblUser.Text = "Bienvenid@ " + user.nombre + " [Administrador]";
             lblUser.TextAlign = ContentAlignment.BottomRight;
-            lblUser.Font = new Font("Consolas", 10);
+            lblUser.Font = new Font("Consolas", 14);
             
             lvlTop.Font = new Font("Consolas", 14);
             
@@ -103,11 +106,18 @@ namespace SourceCode.Vista
             listR = RegistroDAO.getList();
             listUR = UsuarioDAO.GetUsuariosEnEdificio();
             Frequencia f = DepartamentoDAO.BuscarDepartamentoConcurrido();
+            listF = RegistroDAO.BuscarMaxTemps();
 
             dataRegist.DataSource = listR;
             dataBuilding.DataSource = listUR;
             lblfreq.Text = f.frecuencia.ToString();
             lvlTop.Text = f.nombre;
+
+            dataGridView1.DataSource = listF;
+
+            listF = UsuarioDAO.EmpleadosMayores();
+            
+            dataGridView2.DataSource = listF;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

@@ -5,6 +5,7 @@ using SourceCode.Controlador;
 using SourceCode.Modelo;
 using SourceCode.Patrón;
 using SourceCode.Patrón.Estrategia;
+using SourceCode.Properties;
 
 namespace SourceCode.Vista
 {
@@ -31,6 +32,9 @@ namespace SourceCode.Vista
 
             btnLogin.Text = "ENTRAR";
             btnLogin.Font = new Font("Consolas", 14);
+
+            pictureBox1.Image = Resources.Virus;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

@@ -34,6 +34,7 @@ namespace SourceCode.Vista
 
             lblUser.Text = "Bienvenid@ " + user.nombre + " [Seguridad]";
             lblUser.TextAlign = ContentAlignment.BottomRight;
+            lblUser.Font = new Font("Consolas", 14);
             
             title.Text = "Registro de temperaturas";
             title.Font = new Font("Consolas", 24);

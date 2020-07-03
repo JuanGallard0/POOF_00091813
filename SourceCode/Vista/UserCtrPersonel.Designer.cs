@@ -35,6 +35,8 @@ namespace SourceCode.Vista
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.title = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lvlTemp = new System.Windows.Forms.Label();
+            this.lvlMaxTemp = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Button();
             this.lblUser = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
@@ -64,34 +66,35 @@ namespace SourceCode.Vista
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel2.ColumnCount = 6;
+            this.tableLayoutPanel2.ColumnCount = 4;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 2);
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.938272F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.44444F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.31482F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.20988F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.15432F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.938272F));
-            this.tableLayoutPanel2.Controls.Add(this.title, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.dataGridView1, 1, 1);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.94595F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.29429F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.804805F));
+            this.tableLayoutPanel2.Controls.Add(this.title, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dataGridView1, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lvlTemp, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lvlMaxTemp, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 38);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.15193F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.84808F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.9697F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.0303F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 311F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(666, 462);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // title
             // 
-            this.tableLayoutPanel2.SetColumnSpan(this.title, 4);
+            this.tableLayoutPanel2.SetColumnSpan(this.title, 2);
             this.title.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.title.Location = new System.Drawing.Point(35, 0);
+            this.title.Location = new System.Drawing.Point(35, 61);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(592, 56);
+            this.title.Size = new System.Drawing.Size(595, 69);
             this.title.TabIndex = 0;
             this.title.Text = "label1";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -99,12 +102,32 @@ namespace SourceCode.Vista
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel2.SetColumnSpan(this.dataGridView1, 4);
+            this.tableLayoutPanel2.SetColumnSpan(this.dataGridView1, 2);
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 59);
+            this.dataGridView1.Location = new System.Drawing.Point(35, 133);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(592, 363);
+            this.dataGridView1.Size = new System.Drawing.Size(595, 305);
             this.dataGridView1.TabIndex = 16;
+            // 
+            // lvlTemp
+            // 
+            this.lvlTemp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvlTemp.Location = new System.Drawing.Point(35, 0);
+            this.lvlTemp.Name = "lvlTemp";
+            this.lvlTemp.Size = new System.Drawing.Size(300, 61);
+            this.lvlTemp.TabIndex = 17;
+            this.lvlTemp.Text = "lbltemp";
+            this.lvlTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lvlMaxTemp
+            // 
+            this.lvlMaxTemp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvlMaxTemp.Location = new System.Drawing.Point(341, 0);
+            this.lvlMaxTemp.Name = "lvlMaxTemp";
+            this.lvlMaxTemp.Size = new System.Drawing.Size(289, 61);
+            this.lvlMaxTemp.TabIndex = 17;
+            this.lvlMaxTemp.Text = "lbltemp";
+            this.lvlMaxTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnReturn
             // 
@@ -144,6 +167,8 @@ namespace SourceCode.Vista
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Label lvlMaxTemp;
+        private System.Windows.Forms.Label lvlTemp;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label title;

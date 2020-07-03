@@ -23,7 +23,15 @@ namespace SourceCode.Vista
 
             lblUser.Text = "Bienvenid@ " + user.nombre + " [Personal]";
             lblUser.TextAlign = ContentAlignment.BottomRight;
+            lblUser.Font = new Font("Consolas", 14);
+
+            lvlTemp.Text = "Mayor temperatura registrada:";
+            lvlTemp.TextAlign = ContentAlignment.MiddleRight;
+            lvlTemp.Font = new Font("Consolas", 14);
             
+            lvlMaxTemp.TextAlign = ContentAlignment.MiddleLeft;
+            lvlMaxTemp.Font = new Font("Consolas", 14);
+
             title.Text = "Histórico de Entradas/Salidas";
             title.Font = new Font("Consolas", 24);
             
@@ -37,6 +45,8 @@ namespace SourceCode.Vista
         {
             List<Registro> listR = RegistroDAO.getListSingleUser(user.idUsuario);
             dataGridView1.DataSource = listR;
+
+            lvlMaxTemp.Text = RegistroDAO.MaximaTemperatura(user.idUsuario).ToString();
         }
 
         private void btnReturn_Click(object sender, EventArgs e)

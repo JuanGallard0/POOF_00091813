@@ -97,5 +97,25 @@ namespace SourceCode.Controlador
             }
             return list;
         }
+        
+        public static List<Frequencia> EmpleadosMayores()
+        {
+            int anyos;
+            List<Frequencia> listF = new List<Frequencia>();
+            List<Usuario> listU = getList();
+            foreach (Usuario u in listU)
+            {
+                anyos = DateTime.Now.Year - u.fechaNacimiento.Year;
+                if (anyos >= 60)
+                {
+                    Frequencia f = new Frequencia();
+                    f.nombre = u.idUsuario;
+                    f.frecuencia = anyos;
+                    listF.Add(f);
+                }
+            }
+
+            return listF;
+        }
     }
 }
